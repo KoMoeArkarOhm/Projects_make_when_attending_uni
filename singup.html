@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>THE GYM</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="blog-header-logo text-dark" href="#">THE GYM</a>
+      </div>
+      <div class="col-4 text-center">
+        <!-- <a class="blog-header-logo text-dark" href="#">THE GYM</a> -->
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-success" href="singup.html">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="gymhomepage.html">HOME</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="loginpage.html">LOGIN</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="packageandclass.html">PACKAGES AND CLASSES</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="aboutus.html">ABOUT US</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="gymhomepage.html">LOGOUT</a>
+    </nav>
+  </div>
+
+   
+          <div class="container">
+                
+              
+                <div class="row">
+                  
+                  <div class="col-md-12 order-md-1 card">
+                    <h4 class="mb-3">Sign Up Form</h4>
+                    <form class="needs-validation" novalidate>
+                      <div class="row ">
+                        <div class="col-md-6 mb-3">
+                          <label for="firstName">First name</label>
+                          <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                          <div class="invalid-feedback">
+                            Valid first name is required.
+                          </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                          <label for="lastName">Last name</label>
+                          <input t  ype="text" class="form-control" id="lastName" placeholder="" value="" required>
+                          <div class="invalid-feedback">
+                            Valid last name is required.
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="username">Username</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                          </div>
+                          <input type="text" class="form-control" id="username" placeholder="Username" required>
+                          <div class="invalid-feedback" style="width: 100%;">
+                            Your username is required.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="age">Age</label>
+                          <div class="input-group">
+                           
+                            <input type="number" class="form-control" id="age" placeholder="Age" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                              Your Age is required.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="PhoneNumber">Phone Number</label>
+                            <div class="input-group">
+                              
+                              <input type="tel" class="form-control" id="PhoneNumber" placeholder="Phone Number" required>
+                              <div class="invalid-feedback" style="width: 100%;">
+                                Your Phone Number is required.
+                              </div>
+                            </div>
+                          </div>
+                        
+                      <div class="mb-3">
+                        <label for="email">Email (Optional)<span class="text-muted"></span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for  updates.
+                        </div>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" id="address" placeholder="69 Main St" required>
+                        <div class="invalid-feedback">
+                          Please enter your  address.
+                        </div>
+                      </div>
+              
+                      <div class="mb-3">
+                        <label for="address2">Address 2 (Optional)<span class="text-muted"></span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                      </div>
+                      <div class="mb-3">
+                          <label for="Birthday">Birthday <span class="text-muted"></span></label>
+                          <input type="text" class="form-control" id="Birthday" placeholder="Birthday">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Gender">Gender <span class="text-muted"></span></label>
+                            <input type="text" class="form-control" id="Gender" placeholder="Gender">
+                          </div>
+                          <div class="mb-3">
+                              <label for="Branch">Branch <span class="text-muted"></span></label>
+                              <input type="text" class="form-control" id="Branch" placeholder="Branch">
+                            </div>
+                            <div class="mb-3">
+                                <label for="personalInfo">Personal Information <span class="text-muted"></span></label>
+                                <input type="text" class="form-control" id="personalInfo" placeholder="Personal Information">
+                              </div>
+              
+                      <div class="row">
+                 
+                        <div class="col-md-12 mb-3">
+                          <label for="township">TOWNSHIPS</label>
+                          <select class="custom-select d-block w-100" id="township" required>
+                            <option value="">Choose...</option>
+                            <option>Aungmyethazan </option>
+                            <option>Amarapura</option>
+                            <option>Chanayethazan</option>
+                            <option>Chanmyathazi</option>
+                            <option>Maha Aungmye</option>
+                            <option>Patheingyi</option>
+                            <option>Pyigyidagun</option>
+                          </select>
+                          <div class="invalid-feedback">
+                            Please provide a valid township.
+                          </div>
+                        </div>
+                    
+                      </div>
+                     
+                      <hr class="mb-4">
+              
+                    
+               
+                     
+                    
+                      <button class="btn btn-primary btn-lg btn-block" type="submit">Enter</button>
+                      <br>
+                    </form>
+                  </div>
+                </div>
+              
+                <footer class="my-5 pt-5 text-muted text-center text-small">
+                  <p class="mb-1">&copy; 2019-2030 THE GYM</p>
+                  
+                </footer>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+                      <script src="form-validation.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>THE GYM</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/blog/">
+
+    <!-- Bootstrap core CSS -->
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="blog-header-logo text-dark" href="#">THE GYM</a>
+      </div>
+      <div class="col-4 text-center">
+        <!-- <a class="blog-header-logo text-dark" href="#">THE GYM</a> -->
+      </div>
+      <!-- <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-success" href="singup.html">Sign up</a>
+      </div> -->
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+            <a class="p-2 text-muted" href="invoicehistory.html">INVOICE HISTORY</a>
+            <a class="p-2 text-muted" href="#">&nbsp;</a>
+            <a class="p-2 text-muted" href="#">&nbsp;</a>
+            
+      <a class="p-2 text-muted" href="afterloginpackageandclass.html">PACKAGES AND CLASSES</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="afterloginaboutus.html">ABOUT US</a>
+      <a class="p-2 text-muted" href="#">&nbsp;</a>
+      <a class="p-2 text-muted" href="gymhomepage.html">LOGOUT</a>
+    </nav>
+  </div>
+
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 >Package Information</h1>
+    
+  </div>
+  
+  <div class="container">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-3 shadow-sm border-secondary">
+        
+        <div class="card-body" id="OneMonthCardID">
+          <h1 class="card-title pricing-card-title">One Month </h1>
+          
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><sup>MMK</sup>20000</li>
+            <hr class="bg-primary">
+            <li>Swinning pool not included</li>
+          </ul>
+          
+          <button onclick="OneMonthCardDetail()" type="button" class="btn btn-lg btn-block btn-primary">Details</button>
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm border-success">
+        <div class="card-body" id="ThreeMonthCardID">
+          <h1 class="card-title pricing-card-title">Three month </h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><sup>MMK</sup>45000</li>
+            <hr class="bg-primary">
+            <li>Swinning pool not included</li>
+          </ul>
+          <button type="button"  onclick="ThreeMonthCardDetail()" class="btn btn-lg btn-block btn-primary">Details</button>
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm border-dark">
+      
+        <div class="card-body" id="SixMonthCardID">
+          <h1 class="card-title pricing-card-title">Six Month </h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><sup>MMK</sup>100000</li>
+            <hr class="bg-primary">
+            <li>Swinning pool not included</li>
+          </ul>
+          <button type="button" onclick="SixMonthCardDetail()" class="btn btn-lg btn-block btn-primary">Details</button>
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm border-info">
+      
+        <div class="card-body" id="OneYearCardID">
+          <h1 class="card-title pricing-card-title">One Year </h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li><sup>MMK</sup>200000</li>
+            <hr class="bg-primary">
+            <li>Swinning pool not included</li>
+          </ul>
+          <button type="button" onclick="OneYearCardDetail()" class="btn btn-lg btn-block btn-primary">Details</button>
+        </div>
+      </div>
+    </div>
+
+<footer class="blog-footer">
+  <p>GYM mangement app built for <a href="#">THE GYM</a> by <a href="#">@mao</a>.</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+<script>
+    function OneMonthCardDetail() {
+        document.getElementById("OneMonthCardID").innerHTML = '<h1 class="card-title pricing-card-title">Package Details </h1>'
+        +'<ul class="list-unstyled mt-3 mb-4">'
+        +'<br/>'
+        +'  <li class="text-left">Charge: <sup>MMK</sup>20000</li>'
+        +'  <li class="text-left">Package Duration: 1-Month</li>'
+        +'  <li class="text-left">Shift: Morning</li>'
+        +'  <li class="text-left">Discount: 5%</li>'
+        +'</ul>'
+        
+        +'<button onclick="#()" type="button" class="btn btn-lg btn-block btn-primary">Click To Apply</button>';
+    }
+    function ThreeMonthCardDetail() {
+        document.getElementById("ThreeMonthCardID").innerHTML = '<h1 class="card-title pricing-card-title">Package Details </h1>'
+        +'<ul class="list-unstyled mt-3 mb-4">'
+        +'<br/>'
+        +'  <li class="text-left">Charge: <sup>MMK</sup>45000</li>'
+        +'  <li class="text-left">Package Duration: 3-Months</li>'
+        +'  <li class="text-left">Shift: Morning</li>'
+        +'  <li class="text-left">Discount: 20%</li>'
+        +'</ul>'
+        
+        +'<button onclick="#()" type="button" class="btn btn-lg btn-block btn-primary">Click To Apply</button>';
+    }
+    function SixMonthCardDetail() {
+        document.getElementById("SixMonthCardID").innerHTML = '<h1 class="card-title pricing-card-title">Package Details </h1>'
+        +'<ul class="list-unstyled mt-3 mb-4">'
+        +'<br/>'
+        +'  <li class="text-left">Charge: <sup>MMK</sup>100000</li>'
+        +'  <li class="text-left">Package Duration: 6-Months</li>'
+        +'  <li class="text-left">Shift: Morning</li>'
+        +'  <li class="text-left">Discount: 35%</li>'
+        +'</ul>'
+        
+        +'<button onclick="#()" type="button" class="btn btn-lg btn-block btn-primary">Click To Apply</button>';
+    }
+    function OneYearCardDetail() {
+        document.getElementById("OneYearCardID").innerHTML = '<h1 class="card-title pricing-card-title">Package Details </h1>'
+        +'<ul class="list-unstyled mt-3 mb-4">'
+        +'<br/>'
+        +'  <li class="text-left">Charge: <sup>MMK</sup>200000</li>'
+        +'  <li class="text-left">Package Duration: 1-Year</li>'
+        +'  <li class="text-left">Shift: Morning</li>'
+        +'  <li class="text-left">Discount: 45%</li>'
+        +'</ul>'
+        
+        +'<button onclick="#()" type="button" class="btn btn-lg btn-block btn-primary">Click To Apply</button>';
+    }
+</script>
+</body>
+</html>

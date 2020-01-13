@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>LOGIN</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="floating-labels.css" rel="stylesheet">
+    <!-- <script>
+      window.location='invoicehistory.html';
+    </script>  -->
+    <!-- <script>
+      function myLogin(){
+        //window.location='invoicehistory.html';    
+        var username = document.getElementById('userNameID').value;
+        var password = document.getElementById('inputPasswordID').value;
+       
+        if( username=="Ma Ma" && password=="p"){
+          alert(username+" "+password);
+          window.location='invoicehistory.html';
+          //location.href='invoicehistory.html';
+        }
+
+    
+        
+      }
+    </script> -->
+  </head>
+
+  <body>
+    
+    <form class="form-signin" action="./invoicehistory.html" id="myForm">
+  <div class="text-center mb-4">
+    <img class="mb-4" src="loginIcon.png" alt="" width="72" height="72">
+    <h1 class="h3 mb-3 font-weight-normal">LOGIN</h1>
+    
+  </div>
+
+  <div class="form-label-group">
+    <input type="text" id="userNameID" class="form-control" placeholder="User name" required autofocus>
+    <label for="userName">User Name</label>
+  </div>
+
+  <div class="form-label-group">
+    <input type="password" id="inputPasswordID" class="form-control" placeholder="Password" required>
+    <label for="inputPassword">Password</label>
+  </div>
+
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" onclick="myFunction()">Sign in</button>
+  <script>
+    function myFunction(){
+        var username = document.getElementById('userNameID').value;
+        var password = document.getElementById('inputPasswordID').value;
+       
+        if( username=="Ma Ma" && password=="p"){
+          alert('Welcome Ma Ma');
+          document.getElementById('myForm').submit();
+        }else{
+          document.getElementById('myForm').reset();
+        }
+      }
+    
+        
+</script>
+  <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2019</p>
+
+</form>
+</body>
+</html>
